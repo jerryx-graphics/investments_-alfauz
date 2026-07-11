@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfauz—Investments Limited Building Tomorrow's Landmarks, Today</title>
+<meta name="description" content="Apex Construction: commercial and residential construction executed with precision, safety, and architectural excellence.">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts: Archivo (display), Inter (body), JetBrains Mono (technical labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          charcoal: {
+            DEFAULT: '#1A1D21',
+            light: '#22262B',
+            lighter: '#2C3138',
+          },
+          amber: {
+            DEFAULT: '#E8A33D',
+            light: '#F0B968',
+            dark: '#C7862A',
+          },
+          steel: {
+            DEFAULT: '#3D5A73',
+            light: '#5C7C96',
+          },
+          paper: '#F7F5F2',
+          'paper-dim': '#EDEAE4',
+        },
+        fontFamily: {
+          display: ['Archivo', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+          mono: ['JetBrains Mono', 'monospace'],
+        },
+      },
+    },
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  h1, h2, h3, h4, .font-display { font-family: 'Archivo', sans-serif; }
+  .font-mono-label { font-family: 'JetBrains Mono', monospace; }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  }
+
+  /* Blueprint corner tick marks — signature structural device used across sections */
+  .blueprint-corners {
+    position: relative;
+  }
+  .blueprint-corners::before,
+  .blueprint-corners::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-color: currentColor;
+    opacity: 0.5;
+  }
+  .blueprint-corners::before {
+    top: -1px; left: -1px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+  }
+  .blueprint-corners::after {
+    bottom: -1px; right: -1px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+  }
+
+  /* Blueprint grid background texture */
+  .grid-texture {
+    background-image:
+      linear-gradient(rgba(232, 163, 61, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(232, 163, 61, 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .grid-texture-dense {
+    background-image:
+      linear-gradient(rgba(247, 245, 242, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(247, 245, 242, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* Custom focus ring for accessibility */
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid #E8A33D;
+    outline-offset: 2px;
+  }
+
+  /* Mobile menu transition */
+  #mobile-menu {
+    transition: max-height 0.35s ease, opacity 0.25s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  #mobile-menu.open {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  /* Hamburger animation */
+  .hamburger-line { transition: transform 0.3s ease, opacity 0.3s ease; }
+  .hamburger.open .line-1 { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open .line-2 { opacity: 0; }
+  .hamburger.open .line-3 { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Project card image hover zoom */
+  .project-image { transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+  .project-card:hover .project-image { transform: scale(1.06); }
+
+  /* Blueprint hover overlay */
+  .blueprint-overlay { transition: opacity 0.4s ease, transform 0.4s ease; }
+
+  /* Fade-up scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Service card top border sweep */
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 0%;
+    height: 3px;
+    background: #E8A33D;
+    transition: width 0.4s ease;
+  }
+  .service-card:hover::before { width: 100%; }
+
+  /* Filter tab active state underline */
+  .filter-tab { position: relative; }
+  .filter-tab::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background: #E8A33D;
+    transition: width 0.3s ease;
+  }
+  .filter-tab.active::after { width: 100%; }
+
+  /* Number counter styling */
+  .stat-number { font-variant-numeric: tabular-nums; }
+
+  /* Custom scrollbar for a refined touch */
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #1A1D21; }
+  ::-webkit-scrollbar-thumb { background: #3D5A73; border-radius: 6px; }
+  ::-webkit-scrollbar-thumb:hover { background: #E8A33D; }
+</style>
+</head>
+
+<body class="bg-paper text-charcoal antialiased">
+
+<!-- ============ SKIP LINK (accessibility) ============ -->
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-amber focus:text-charcoal focus:px-4 focus:py-2 focus:rounded focus:z-[100] font-semibold">Skip to main content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-charcoal/95 backdrop-blur-md border-b border-white/5">
+  <nav class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10" aria-label="Primary">
+    <div class="flex items-center justify-between h-20">
+
+      <!-- Logo -->
+      <a href="#home" class="flex items-center gap-3 group" aria-label="Apex Construction — Home">
+        <span class="relative flex items-center justify-center w-11 h-11 border-2 border-amber rotate-45 group-hover:rotate-[135deg] transition-transform duration-500">
+          <span class="-rotate-45 group-hover:-rotate-[135deg] transition-transform duration-500 font-display font-black text-amber text-lg">A</span>
+        </span>
+        <span class="font-display font-bold text-lg sm:text-xl text-paper tracking-tight">
+          ALFAUZ <span class="text-amber font-mono-label font-normal text-xs sm:text-sm align-middle tracking-widest">INVESTMENTS</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="hidden lg:flex items-center gap-9 font-medium text-sm text-paper/80">
+        <li><a href="#home" class="hover:text-amber transition-colors">Home</a></li>
+        <li><a href="#about" class="hover:text-amber transition-colors">About</a></li>
+        <li><a href="#services" class="hover:text-amber transition-colors">Services</a></li>
+        <li><a href="#projects" class="hover:text-amber transition-colors">Projects</a></li>
+        <li><a href="#blueprints" class="hover:text-amber transition-colors">Blueprints</a></li>
+        <li><a href="#contact" class="hover:text-amber transition-colors">Contact</a></li>
+      </ul>
+
+      <!-- CTA + Hamburger -->
+      <div class="flex items-center gap-4">
+        <a href="#contact" class="hidden lg:inline-flex items-center gap-2 bg-amber hover:bg-amber-light text-charcoal font-display font-bold text-sm px-6 py-3 transition-colors duration-300">
+          GET A QUOTE
+        </a>
+        <button id="hamburger-btn" class="hamburger lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-[6px]" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger-line line-1 block w-6 h-[2px] bg-paper"></span>
+          <span class="hamburger-line line-2 block w-6 h-[2px] bg-paper"></span>
+          <span class="hamburger-line line-3 block w-6 h-[2px] bg-paper"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden">
+      <ul class="flex flex-col gap-1 pb-6 pt-2 font-medium text-paper/85 border-t border-white/10">
+        <li><a href="#home" class="mobile-link block py-3 px-2 hover:text-amber hover:bg-white/5 transition-colors">Home</a></li>
+        <li><a href="#about" class="mobile-link block py-3 px-2 hover:text-amber hover:bg-white/5 transition-colors">About</a></li>
+        <li><a href="#services" class="mobile-link block py-3 px-2 hover:text-amber hover:bg-white/5 transition-colors">Services</a></li>
+        <li><a href="#projects" class="mobile-link block py-3 px-2 hover:text-amber hover:bg-white/5 transition-colors">Projects</a></li>
+        <li><a href="#blueprints" class="mobile-link block py-3 px-2 hover:text-amber hover:bg-white/5 transition-colors">Blueprints</a></li>
+        <li><a href="#contact" class="mobile-link block py-3 px-2 hover:text-amber hover:bg-white/5 transition-colors">Contact</a></li>
+        <li class="pt-2">
+          <a href="#contact" class="mobile-link inline-flex items-center gap-2 bg-amber text-charcoal font-display font-bold text-sm px-6 py-3 w-full justify-center">GET A QUOTE</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ============ HERO SECTION ============ -->
+<section id="home" class="relative min-h-screen flex items-center bg-charcoal text-paper overflow-hidden pt-20">
+  <!-- Blueprint grid texture backdrop -->
+  <div class="absolute inset-0 grid-texture-dense pointer-events-none"></div>
+  <!-- Subtle gradient glow -->
+  <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-amber/10 rounded-full blur-[120px] pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-steel/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+  <!-- Coordinate-style decorative labels (blueprint motif) -->
+  <div class="hidden md:block absolute top-28 left-8 font-mono-label text-[11px] text-amber/50 tracking-widest">
+    LAT 40.7128°N — LON 74.0060°W
+  </div>
+  <div class="hidden md:block absolute bottom-10 right-8 font-mono-label text-[11px] text-steel-light/60 tracking-widest">
+    DWG-NO. AC-0142 // REV. C
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-24 grid lg:grid-cols-12 gap-10 items-center w-full">
+
+    <div class="lg:col-span-7 reveal">
+      <p class="font-mono-label text-amber text-xs sm:text-sm tracking-[0.25em] mb-6 flex items-center gap-3">
+        <span class="w-8 h-[1px] bg-amber inline-block"></span>
+        GENERAL CONTRACTORS · EST. LICENSE 
+      </p>
+      <h1 class="font-display font-black text-4xl sm:text-6xl lg:text-7xl leading-[1.05] mb-6">
+        Building Tomorrow's<br>
+        <span class="text-amber">Landmarks,</span> Today.
+      </h1>
+      <p class="text-paper/70 text-base sm:text-lg leading-relaxed max-w-xl mb-10">
+        Commercial and residential construction executed with precision, safety, and architectural excellence.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#projects" class="inline-flex items-center justify-center gap-2 bg-amber hover:bg-amber-light text-charcoal font-display font-bold text-sm sm:text-base px-8 py-4 transition-all duration-300 hover:gap-4">
+          VIEW OUR PROJECTS
+          <span aria-hidden="true">→</span>
+        </a>
+        <a href="#contact" class="inline-flex items-center justify-center gap-2 border-2 border-paper/30 hover:border-amber hover:text-amber text-paper font-display font-bold text-sm sm:text-base px-8 py-4 transition-all duration-300">
+          REQUEST A CONSULTATION
+        </a>
+      </div>
+
+      <!-- Trust stats strip -->
+      <div class="grid grid-cols-3 gap-6 mt-16 max-w-lg border-t border-white/10 pt-8">
+        <div>
+          <p class="font-display font-black text-3xl sm:text-4xl text-amber stat-number" data-count="187">0</p>
+          <p class="font-mono-label text-[11px] text-paper/50 tracking-wider mt-1">PROJECTS DELIVERED</p>
+        </div>
+        <div>
+          <p class="font-display font-black text-3xl sm:text-4xl text-amber stat-number" data-count="24">0</p>
+          <p class="font-mono-label text-[11px] text-paper/50 tracking-wider mt-1">YEARS IN BUSINESS</p>
+        </div>
+        <div>
+          <p class="font-display font-black text-3xl sm:text-4xl text-amber stat-number" data-count="0" data-suffix="%">0%</p>
+          <p class="font-mono-label text-[11px] text-paper/50 tracking-wider mt-1" data-label-for-zero>SAFETY-RATED SITES</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right visual: abstracted structural graphic -->
+    <div class="lg:col-span-5 hidden lg:block reveal">
+      <div class="relative aspect-[4/5] border border-amber/20 blueprint-corners text-amber">
+        <svg viewBox="0 0 400 500" class="w-full h-full" aria-hidden="true">
+          <!-- Building silhouette wireframe -->
+          <rect x="60" y="180" width="280" height="280" fill="none" stroke="#E8A33D" stroke-width="1.5" opacity="0.6"/>
+          <rect x="90" y="90" width="220" height="90" fill="none" stroke="#E8A33D" stroke-width="1.5" opacity="0.6"/>
+          <rect x="130" y="40" width="140" height="50" fill="none" stroke="#E8A33D" stroke-width="1.5" opacity="0.6"/>
+          <!-- Window grid -->
+          <g stroke="#5C7C96" stroke-width="1" opacity="0.5">
+            <line x1="90" y1="220" x2="340" y2="220"/>
+            <line x1="90" y1="260" x2="340" y2="260"/>
+            <line x1="90" y1="300" x2="340" y2="300"/>
+            <line x1="90" y1="340" x2="340" y2="340"/>
+            <line x1="90" y1="380" x2="340" y2="380"/>
+            <line x1="90" y1="420" x2="340" y2="420"/>
+            <line x1="150" y1="180" x2="150" y2="460"/>
+            <line x1="200" y1="180" x2="200" y2="460"/>
+            <line x1="250" y1="180" x2="250" y2="460"/>
+            <line x1="300" y1="180" x2="300" y2="460"/>
+          </g>
+          <!-- Dimension lines -->
+          <g stroke="#F0B968" stroke-width="1" opacity="0.7">
+            <line x1="60" y1="470" x2="340" y2="470"/>
+            <line x1="60" y1="465" x2="60" y2="475"/>
+            <line x1="340" y1="465" x2="340" y2="475"/>
+          </g>
+          <text x="180" y="490" fill="#F0B968" font-family="JetBrains Mono" font-size="11">280.0'-0"</text>
+          <!-- crosshair marker -->
+          <circle cx="200" cy="250" r="4" fill="none" stroke="#E8A33D" stroke-width="1.5"/>
+          <line x1="185" y1="250" x2="215" y2="250" stroke="#E8A33D" stroke-width="1"/>
+          <line x1="200" y1="235" x2="200" y2="265" stroke="#E8A33D" stroke-width="1"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll cue -->
+  <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-paper/40 hover:text-amber transition-colors animate-bounce" aria-label="Scroll to next section">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </a>
+</section>
+
+<!-- ============ ABOUT SECTION ============ -->
+<section id="about" class="py-24 sm:py-32 bg-paper">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-14 items-center">
+
+      <div class="lg:col-span-5 reveal">
+        <div class="relative">
+          <div class="aspect-[4/5] bg-charcoal-lighter relative overflow-hidden blueprint-corners text-amber">
+            <img src="WhatsApp Image 2026-07-08 at 1.16.10 PM.jpeg" alt="Construction site foreman reviewing blueprints on-site" class="w-full h-full object-cover opacity-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent"></div>
+          </div>
+          <div class="absolute -bottom-6 -right-6 bg-amber text-charcoal p-6 max-w-[200px] hidden sm:block shadow-xl">
+            <p class="font-display font-black text-3xl">24</p>
+            <p class="font-mono-label text-xs tracking-wider uppercase">Years building with integrity</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 reveal">
+        <p class="font-mono-label text-steel text-xs sm:text-sm tracking-[0.25em] mb-4 flex items-center gap-3">
+          <span class="w-8 h-[1px] bg-steel inline-block"></span>
+          ABOUT ALFAUZ INVESTMENTS
+        </p>
+        <h2 class="font-display font-black text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+          Precision-built structures, <span class="text-amber">delivered on time</span> and on budget.
+        </h2>
+        <p class="text-charcoal/70 leading-relaxed mb-6">
+          Since 2002, Alfauz Investments has partnered with developers, architects, and homeowners to deliver structurally sound, aesthetically refined buildings across the region. Our teams hold safety as a non-negotiable standard and treat every blueprint as a promise we intend to keep.
+        </p>
+        <p class="text-charcoal/70 leading-relaxed mb-10">
+          From ground-up commercial towers to detailed residential renovations, our in-house engineers, project managers, and licensed tradespeople work as a single accountable unit — no subcontractor guesswork, no surprises.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="flex gap-4">
+            <div class="shrink-0 w-11 h-11 flex items-center justify-center border-2 border-amber text-amber font-display font-bold">✓</div>
+            <div>
+              <h3 class="font-display font-bold text-base mb-1">Licensed &amp; Insured</h3>
+              <p class="text-sm text-charcoal/60">Fully bonded across all commercial and residential trades.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="shrink-0 w-11 h-11 flex items-center justify-center border-2 border-amber text-amber font-display font-bold">✓</div>
+            <div>
+              <h3 class="font-display font-bold text-base mb-1">Zero-Incident Culture</h3>
+              <p class="text-sm text-charcoal/60">OSHA-aligned site protocols on every single job.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="shrink-0 w-11 h-11 flex items-center justify-center border-2 border-amber text-amber font-display font-bold">✓</div>
+            <div>
+              <h3 class="font-display font-bold text-base mb-1">In-House Engineering</h3>
+              <p class="text-sm text-charcoal/60">Structural review handled internally, not outsourced.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="shrink-0 w-11 h-11 flex items-center justify-center border-2 border-amber text-amber font-display font-bold">✓</div>
+            <div>
+              <h3 class="font-display font-bold text-base mb-1">Transparent Budgets</h3>
+              <p class="text-sm text-charcoal/60">Line-item cost tracking shared with clients in real time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES SECTION ============ -->
+<section id="services" class="py-24 sm:py-32 bg-charcoal text-paper relative overflow-hidden">
+  <div class="absolute inset-0 grid-texture-dense pointer-events-none"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+    <div class="max-w-2xl mb-16 reveal">
+      <p class="font-mono-label text-amber text-xs sm:text-sm tracking-[0.25em] mb-4 flex items-center gap-3">
+        <span class="w-8 h-[1px] bg-amber inline-block"></span>
+        WHAT WE DO
+      </p>
+      <h2 class="font-display font-black text-3xl sm:text-4xl lg:text-5xl leading-tight">
+        Core services built around <span class="text-amber">one accountable team.</span>
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Service Card 1 -->
+      <div class="service-card relative bg-charcoal-lighter border border-white/10 p-8 group hover:border-amber/40 transition-colors duration-300 reveal">
+        <div class="w-14 h-14 flex items-center justify-center border border-amber/30 text-amber mb-6 group-hover:bg-amber group-hover:text-charcoal transition-colors duration-300">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M9 13h1M14 9h1M14 13h1M9 21v-5h6v5"/></svg>
+        </div>
+        <p class="font-mono-label text-amber/60 text-xs mb-2">SERVICE 01</p>
+        <h3 class="font-display font-bold text-xl mb-3">General Contracting</h3>
+        <p class="text-paper/60 text-sm leading-relaxed">Full-scope ground-up construction management from permitting through final walkthrough, with one point of contact throughout.</p>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card relative bg-charcoal-lighter border border-white/10 p-8 group hover:border-amber/40 transition-colors duration-300 reveal">
+        <div class="w-14 h-14 flex items-center justify-center border border-amber/30 text-amber mb-6 group-hover:bg-amber group-hover:text-charcoal transition-colors duration-300">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        </div>
+        <p class="font-mono-label text-amber/60 text-xs mb-2">SERVICE 02</p>
+        <h3 class="font-display font-bold text-xl mb-3">Project Management</h3>
+        <p class="text-paper/60 text-sm leading-relaxed">Schedule, budget, and subcontractor oversight handled by licensed PMs who report progress in real time.</p>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card relative bg-charcoal-lighter border border-white/10 p-8 group hover:border-amber/40 transition-colors duration-300 reveal">
+        <div class="w-14 h-14 flex items-center justify-center border border-amber/30 text-amber mb-6 group-hover:bg-amber group-hover:text-charcoal transition-colors duration-300">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21V9l8-6 8 6v12M9 21v-8h6v8M4 21h16"/></svg>
+        </div>
+        <p class="font-mono-label text-amber/60 text-xs mb-2">SERVICE 03</p>
+        <h3 class="font-display font-bold text-xl mb-3">Architectural Design</h3>
+        <p class="text-paper/60 text-sm leading-relaxed">In-house design and structural drafting that turns concepts into permit-ready, buildable blueprints.</p>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service-card relative bg-charcoal-lighter border border-white/10 p-8 group hover:border-amber/40 transition-colors duration-300 reveal">
+        <div class="w-14 h-14 flex items-center justify-center border border-amber/30 text-amber mb-6 group-hover:bg-amber group-hover:text-charcoal transition-colors duration-300">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+        </div>
+        <p class="font-mono-label text-amber/60 text-xs mb-2">SERVICE 04</p>
+        <h3 class="font-display font-bold text-xl mb-3">Renovations</h3>
+        <p class="text-paper/60 text-sm leading-relaxed">Structural and cosmetic renovations for commercial and residential properties, occupied or vacant.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS / PORTFOLIO SECTION ============ -->
+<section id="projects" class="py-24 sm:py-32 bg-paper-dim">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-12 reveal">
+      <div class="max-w-2xl">
+        <p class="font-mono-label text-steel text-xs sm:text-sm tracking-[0.25em] mb-4 flex items-center gap-3">
+          <span class="w-8 h-[1px] bg-steel inline-block"></span>
+          COMPLETED WORK
+        </p>
+        <h2 class="font-display font-black text-3xl sm:text-4xl lg:text-5xl leading-tight">
+          A portfolio of <span class="text-amber">finished landmarks.</span>
+        </h2>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap gap-6 font-display font-bold text-sm" role="tablist" aria-label="Project category filters">
+        <button class="filter-tab active pb-1 text-charcoal" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-tab pb-1 text-charcoal/50 hover:text-charcoal transition-colors" data-filter="commercial" role="tab" aria-selected="false">Commercial</button>
+        <button class="filter-tab pb-1 text-charcoal/50 hover:text-charcoal transition-colors" data-filter="residential" role="tab" aria-selected="false">Residential</button>
+        <button class="filter-tab pb-1 text-charcoal/50 hover:text-charcoal transition-colors" data-filter="industrial" role="tab" aria-selected="false">Industrial</button>
+      </div>
+    </div>
+
+    <!-- Project Grid -->
+    <div id="project-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="project-card group reveal" data-category="commercial">
+        <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+          <img src="WhatsApp Image 2026-07-08 at 1.16.16 PM.jpeg" alt="WhatsApp Image 2026-07-08 at 1.16.16 PM.jpeg" class="project-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/10 to-transparent"></div>
+          <span class="absolute top-4 left-4 font-mono-label text-[11px] tracking-wider bg-amber text-charcoal px-3 py-1">COMMERCIAL</span>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <h3 class="font-display font-bold text-lg text-paper">Water Towers</h3>
+            <p class="font-mono-label text-xs text-paper/70 mt-1">Downtown</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group reveal" data-category="residential">
+        <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+          <img src="Residential.jpeg" alt="Modern residential home with large windows" class="project-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/10 to-transparent"></div>
+          <span class="absolute top-4 left-4 font-mono-label text-[11px] tracking-wider bg-steel text-paper px-3 py-1">RESIDENTIAL</span>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <h3 class="font-display font-bold text-lg text-paper">Milimani Residence</h3>
+            <p class="font-mono-label text-xs text-paper/70 mt-1">Milimani </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group reveal" data-category="industrial ">
+        <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+          <img src="WhatsApp Image 2026-07-08 at 1.16.48 PM.jpeg" alt="Large industrial warehouse and distribution facility" class="project-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/10 to-transparent"></div>
+          <span class="absolute top-4 left-4 font-mono-label text-[11px] tracking-wider bg-charcoal-lighter text-amber border border-amber/40 px-3 py-1">INDUSTRIAL</span>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <h3 class="font-display font-bold text-lg text-paper">Logistics Hub</h3>
+            <p class="font-mono-label text-xs text-paper/70 mt-1">Under Construction</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group reveal" data-category="commercial">
+        <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" alt="Modern retail and office plaza exterior" class="project-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/10 to-transparent"></div>
+          <span class="absolute top-4 left-4 font-mono-label text-[11px] tracking-wider bg-amber text-charcoal px-3 py-1">COMMERCIAL</span>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <h3 class="font-display font-bold text-lg text-paper"> Retail Plaza</h3>
+            <p class="font-mono-label text-xs text-paper/70 mt-1">Riverside</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group reveal" data-category="residential">
+        <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=80" alt="Contemporary two-story family home" class="project-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/10 to-transparent"></div>
+          <span class="absolute top-4 left-4 font-mono-label text-[11px] tracking-wider bg-steel text-paper px-3 py-1">RESIDENTIAL</span>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <h3 class="font-display font-bold text-lg text-paper">Birundu Estates</h3>
+            <p class="font-mono-label text-xs text-paper/70 mt-1">kisumu Ndogo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card group reveal" data-category="industrial">
+        <div class="relative overflow-hidden aspect-[4/3] bg-charcoal">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=700&q=80" alt="Manufacturing facility with steel framing" class="project-image w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/10 to-transparent"></div>
+          <span class="absolute top-4 left-4 font-mono-label text-[11px] tracking-wider bg-charcoal-lighter text-amber border border-amber/40 px-3 py-1">INDUSTRIAL</span>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <h3 class="font-display font-bold text-lg text-paper">Manufacturing Plant</h3>
+            <p class="font-mono-label text-xs text-paper/70 mt-1"> Industrial Area</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p id="no-results" class="hidden text-center text-charcoal/50 py-16 font-mono-label">No projects found in this category.</p>
+  </div>
+</section>
+
+<!-- ============ BLUEPRINTS SHOWCASE SECTION ============ -->
+<section id="blueprints" class="py-24 sm:py-32 bg-charcoal text-paper relative overflow-hidden">
+  <div class="absolute inset-0 grid-texture-dense pointer-events-none"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+    <div class="max-w-2xl mb-16 reveal">
+      <p class="font-mono-label text-amber text-xs sm:text-sm tracking-[0.25em] mb-4 flex items-center gap-3">
+        <span class="w-8 h-[1px] bg-amber inline-block"></span>
+        TECHNICAL PRECISION
+      </p>
+      <h2 class="font-display font-black text-3xl sm:text-4xl lg:text-5xl leading-tight">
+        Every landmark starts as a <span class="text-amber">line on paper.</span>
+      </h2>
+      <p class="text-paper/60 mt-5 leading-relaxed">
+        Hover over each drawing to see the technical phase it represents — from structural schematics to final CAD renders.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Blueprint 1 -->
+      <div class="blueprint-card group relative overflow-hidden aspect-[4/3] border border-white/10 reveal">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=80" alt="Architectural blueprint of building structural framing" class="w-full h-full object-cover">
+        <div class="blueprint-overlay absolute inset-0 bg-charcoal/85 opacity-0 group-hover:opacity-100 flex flex-col justify-end p-6 translate-y-2 group-hover:translate-y-0">
+          <p class="font-mono-label text-amber text-xs tracking-wider mb-2">PHASE 01 // DWG-A101</p>
+          <h3 class="font-display font-bold text-lg">Structural Framing Schematics</h3>
+          <p class="text-paper/60 text-sm mt-2">Load-bearing walls, beam placement, and foundation anchor points mapped to code.</p>
+        </div>
+      </div>
+
+      <!-- Blueprint 2 -->
+      <div class="blueprint-card group relative overflow-hidden aspect-[4/3] border border-white/10 reveal">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=700&q=80" alt="3D CAD render of a modern building exterior" class="w-full h-full object-cover">
+        <div class="blueprint-overlay absolute inset-0 bg-charcoal/85 opacity-0 group-hover:opacity-100 flex flex-col justify-end p-6 translate-y-2 group-hover:translate-y-0">
+          <p class="font-mono-label text-amber text-xs tracking-wider mb-2">PHASE 02 // DWG-A204</p>
+          <h3 class="font-display font-bold text-lg">3D CAD Exterior Render</h3>
+          <p class="text-paper/60 text-sm mt-2">Full massing model used for client approval and facade material selection.</p>
+        </div>
+      </div>
+
+      <!-- Blueprint 3 -->
+      <div class="blueprint-card group relative overflow-hidden aspect-[4/3] border border-white/10 reveal">
+        <img src="https://images.unsplash.com/photo-1524230659092-07f99a75c013?w=700&q=80" alt="Detailed floor plan drawing of building layout" class="w-full h-full object-cover">
+        <div class="blueprint-overlay absolute inset-0 bg-charcoal/85 opacity-0 group-hover:opacity-100 flex flex-col justify-end p-6 translate-y-2 group-hover:translate-y-0">
+          <p class="font-mono-label text-amber text-xs tracking-wider mb-2">PHASE 03 // DWG-A310</p>
+          <h3 class="font-display font-bold text-lg">Interior Floor Plan Layout</h3>
+          <p class="text-paper/60 text-sm mt-2">Room dimensions, MEP routing, and egress paths finalized for permitting.</p>
+        </div>
+      </div>
+
+      <!-- Blueprint 4 -->
+      <div class="blueprint-card group relative overflow-hidden aspect-[4/3] border border-white/10 reveal">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=700&q=80" alt="Engineer reviewing blueprint drawings on a table" class="w-full h-full object-cover">
+        <div class="blueprint-overlay absolute inset-0 bg-charcoal/85 opacity-0 group-hover:opacity-100 flex flex-col justify-end p-6 translate-y-2 group-hover:translate-y-0">
+          <p class="font-mono-label text-amber text-xs tracking-wider mb-2">PHASE 04 // DWG-A088</p>
+          <h3 class="font-display font-bold text-lg">Site Grading &amp; Utility Plan</h3>
+          <p class="text-paper/60 text-sm mt-2">Drainage slopes, utility trenching, and site access routes surveyed.</p>
+        </div>
+      </div>
+
+      <!-- Blueprint 5 -->
+      <div class="blueprint-card group relative overflow-hidden aspect-[4/3] border border-white/10 reveal">
+        <img src="WhatsApp Image 2026-07-08 at 1.16.32 PM.jpeg" alt="Close-up of architectural technical drawing details" class="w-full h-full object-cover">
+        <div class="blueprint-overlay absolute inset-0 bg-charcoal/85 opacity-0 group-hover:opacity-100 flex flex-col justify-end p-6 translate-y-2 group-hover:translate-y-0">
+          <p class="font-mono-label text-amber text-xs tracking-wider mb-2">PHASE 05 // DWG-A417</p>
+          <h3 class="font-display font-bold text-lg">Facade Detail Elevations</h3>
+          <p class="text-paper/60 text-sm mt-2">Window mullion spacing, cladding joints, and flashing details specified.</p>
+        </div>
+      </div>
+
+      <!-- Blueprint 6 -->
+      <div class="blueprint-card group relative overflow-hidden aspect-[4/3] border border-white/10 reveal">
+        <img src="WhatsApp Image 2026-07-08 at 1.16.31 PM.jpeg" alt="Construction plans rolled and stacked on site" class="w-full h-full object-cover">
+        <div class="blueprint-overlay absolute inset-0 bg-charcoal/85 opacity-0 group-hover:opacity-100 flex flex-col justify-end p-6 translate-y-2 group-hover:translate-y-0">
+          <p class="font-mono-label text-amber text-xs tracking-wider mb-2">PHASE 06 // DWG-A502</p>
+          <h3 class="font-display font-bold text-lg">Final As-Built Documentation</h3>
+          <p class="text-paper/60 text-sm mt-2">Post-construction drawings reconciled with every field change made on site.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT SECTION ============ -->
+<section id="contact" class="py-24 sm:py-32 bg-paper-dim">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10">
+
+    <div class="max-w-2xl mb-14 reveal">
+      <p class="font-mono-label text-steel text-xs sm:text-sm tracking-[0.25em] mb-4 flex items-center gap-3">
+        <span class="w-8 h-[1px] bg-steel inline-block"></span>
+        LET'S BUILD
+      </p>
+      <h2 class="font-display font-black text-3xl sm:text-4xl lg:text-5xl leading-tight">
+        Request a <span class="text-amber">consultation.</span>
+      </h2>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-10">
+
+      <!-- Contact Form -->
+      <div class="lg:col-span-7 bg-charcoal p-7 sm:p-10 reveal">
+        <form id="contact-form" class="space-y-6" novalidate>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="full-name" class="block font-mono-label text-xs text-paper/60 tracking-wider mb-2">FULL NAME *</label>
+              <input type="text" id="full-name" name="full-name" required
+                class="w-full bg-charcoal-lighter border border-white/10 text-paper px-4 py-3 focus:border-amber outline-none transition-colors placeholder:text-paper/30"
+                placeholder="Jane Rivera">
+              <p class="error-msg hidden text-amber text-xs mt-1 font-mono-label"></p>
+            </div>
+            <div>
+              <label for="email" class="block font-mono-label text-xs text-paper/60 tracking-wider mb-2">EMAIL ADDRESS *</label>
+              <input type="email" id="email" name="email" required
+                class="w-full bg-charcoal-lighter border border-white/10 text-paper px-4 py-3 focus:border-amber outline-none transition-colors placeholder:text-paper/30"
+                placeholder="jane@company.com">
+              <p class="error-msg hidden text-amber text-xs mt-1 font-mono-label"></p>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="phone" class="block font-mono-label text-xs text-paper/60 tracking-wider mb-2">PHONE NUMBER *</label>
+              <input type="tel" id="phone" name="phone" required
+                class="w-full bg-charcoal-lighter border border-white/10 text-paper px-4 py-3 focus:border-amber outline-none transition-colors placeholder:text-paper/30"
+                placeholder="(555) 123-4567">
+              <p class="error-msg hidden text-amber text-xs mt-1 font-mono-label"></p>
+            </div>
+            <div>
+              <label for="project-type" class="block font-mono-label text-xs text-paper/60 tracking-wider mb-2">PROJECT TYPE *</label>
+              <select id="project-type" name="project-type" required
+                class="w-full bg-charcoal-lighter border border-white/10 text-paper px-4 py-3 focus:border-amber outline-none transition-colors">
+                <option value="" disabled selected>Select a project type</option>
+                <option value="commercial-new">New Commercial Build</option>
+                <option value="residential-new">New Residential Build</option>
+                <option value="renovation">Renovation</option>
+                <option value="industrial">Industrial Facility</option>
+                <option value="other">Other</option>
+              </select>
+              <p class="error-msg hidden text-amber text-xs mt-1 font-mono-label"></p>
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="block font-mono-label text-xs text-paper/60 tracking-wider mb-2">PROJECT DETAILS *</label>
+            <textarea id="message" name="message" rows="5" required
+              class="w-full bg-charcoal-lighter border border-white/10 text-paper px-4 py-3 focus:border-amber outline-none transition-colors placeholder:text-paper/30 resize-none"
+              placeholder="Tell us about your site, timeline, and goals..."></textarea>
+            <p class="error-msg hidden text-amber text-xs mt-1 font-mono-label"></p>
+          </div>
+
+          <button type="submit" class="w-full bg-amber hover:bg-amber-light text-charcoal font-display font-bold text-sm sm:text-base py-4 transition-colors duration-300">
+            SUBMIT REQUEST
+          </button>
+
+          <p id="form-success" class="hidden text-amber text-sm font-mono-label text-center pt-2">
+            ✓ Thank you — your request has been received. We'll respond within 1 business day.
+          </p>
+        </form>
+      </div>
+
+      <!-- Contact Info Sidebar -->
+      <aside class="lg:col-span-5 space-y-4 reveal">
+
+        <div class="bg-charcoal-lighter border border-white/10 p-7 flex gap-5 items-start">
+          <div class="shrink-0 w-11 h-11 flex items-center justify-center border border-amber/40 text-amber">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="font-mono-label text-xs text-paper/50 tracking-wider mb-1">CALL US</p>
+            <p class="font-display font-bold text-lg text-paper">+2547 14943358</p>
+          </div>
+        </div>
+
+        <div class="bg-charcoal-lighter border border-white/10 p-7 flex gap-5 items-start">
+          <div class="shrink-0 w-11 h-11 flex items-center justify-center border border-amber/40 text-amber">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+          </div>
+          <div>
+            <p class="font-mono-label text-xs text-paper/50 tracking-wider mb-1">EMAIL US</p>
+            <p class="font-display font-bold text-lg text-paper break-all">Bonifaceotienoogao@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="bg-charcoal-lighter border border-white/10 p-7 flex gap-5 items-start">
+          <div class="shrink-0 w-11 h-11 flex items-center justify-center border border-amber/40 text-amber">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p class="font-mono-label text-xs text-paper/50 tracking-wider mb-1">OFFICE ADDRESS</p>
+            <p class="font-display font-bold text-lg text-paper leading-snug">4820 Industrial Area<br>Kisumu, Kenya</p>
+          </div>
+        </div>
+
+        <div class="bg-charcoal-lighter border border-white/10 p-7 flex gap-5 items-start">
+          <div class="shrink-0 w-11 h-11 flex items-center justify-center border border-amber/40 text-amber">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <p class="font-mono-label text-xs text-paper/50 tracking-wider mb-1">OPERATIONAL HOURS</p>
+            <p class="font-display font-bold text-base text-paper leading-snug">Mon – Fri: 7:00 AM – 6:00 PM<br>Saturday: 8:00 AM – 1:00 PM<br>Sunday: Closed</p>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-charcoal text-paper/70 border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <div class="lg:col-span-2">
+        <a href="#home" class="flex items-center gap-3 mb-5">
+          <span class="flex items-center justify-center w-10 h-10 border-2 border-amber rotate-45">
+            <span class="-rotate-45 font-display font-black text-amber text-base">A</span>
+          </span>
+          <span class="font-display font-bold text-paper">ALFAUZ <span class="text-amber font-mono-label font-normal text-xs align-middle tracking-widest">INVESTMENTS</span></span>
+        </a>
+        <p class="text-sm leading-relaxed max-w-sm">
+          Alfauz Investments has delivered commercial, residential, and industrial projects for over two decades, combining licensed craftsmanship with in-house architectural and engineering expertise on every build.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-display font-bold text-paper text-sm tracking-wider mb-4">NAVIGATE</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#home" class="hover:text-amber transition-colors">Home</a></li>
+          <li><a href="#about" class="hover:text-amber transition-colors">About</a></li>
+          <li><a href="#services" class="hover:text-amber transition-colors">Services</a></li>
+          <li><a href="#projects" class="hover:text-amber transition-colors">Projects</a></li>
+          <li><a href="#contact" class="hover:text-amber transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-display font-bold text-paper text-sm tracking-wider mb-4">LEGAL</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#" class="hover:text-amber transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-amber transition-colors">Terms of Service</a></li>
+          <li><a href="#" class="hover:text-amber transition-colors">Accessibility</a></li>
+          <li><a href="#" class="hover:text-amber transition-colors">Site Safety Standards</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mt-14 pt-8 border-t border-white/10">
+      <p class="text-xs text-paper/40 font-mono-label">© <span id="year"></span> ALFAUZ INVESTMENTS LLC. ALL RIGHTS RESERVED.</p>
+
+      <!-- Social Icons -->
+      <div class="flex items-center gap-4">
+        <a href="https://www.linkedin.com/in/bonface-otieno-65357591/" aria-label="Alfauz Investments on Facebook" class="w-9 h-9 flex items-center justify-center border border-white/10 hover:border-amber hover:text-amber transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.9H16l-.4 2.9h-2.1v7A10 10 0 0022 12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/bonface-otieno-65357591/" aria-label="Alfauz Investments on LinkedIn" class="w-9 h-9 flex items-center justify-center border border-white/10 hover:border-amber hover:text-amber transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5V9h3zM6.5 7.7A1.7 1.7 0 118.2 6a1.7 1.7 0 01-1.7 1.7zM19 19h-3v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V19h-3V9h2.9v1.3a3.1 3.1 0 012.8-1.5c3 0 3.5 2 3.5 4.5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/bonface-otieno-65357591/" aria-label="Alfauz Investments on Instagram" class="w-9 h-9 flex items-center justify-center border border-white/10 hover:border-amber hover:text-amber transition-colors">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ JAVASCRIPT ============ -->
+<script>
+  // ---- Mobile menu toggle ----
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburgerBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburgerBtn.classList.toggle('open');
+    hamburgerBtn.setAttribute('aria-expanded', isOpen);
+  });
+
+  // Close mobile menu when a link is clicked
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburgerBtn.classList.remove('open');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // ---- Navbar shrink/style on scroll ----
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      navbar.classList.add('shadow-lg');
+    } else {
+      navbar.classList.remove('shadow-lg');
+    }
+  });
+
+  // ---- Scroll reveal animation using IntersectionObserver ----
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // ---- Animated stat counters (triggers once hero is visible) ----
+  const statEls = document.querySelectorAll('.stat-number');
+  let statsAnimated = false;
+
+  function animateStats() {
+    if (statsAnimated) return;
+    statsAnimated = true;
+    statEls.forEach(el => {
+      const target = parseInt(el.getAttribute('data-count'), 10);
+      const suffix = el.getAttribute('data-suffix') || '';
+      const isPercentTarget = suffix === '%';
+      const finalValue = isPercentTarget ? 100 : target;
+      const duration = 1600;
+      const start = performance.now();
+
+      function tick(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        // ease-out cubic
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(eased * finalValue);
+        el.textContent = current + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+
+  const heroObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateStats();
+        heroObserver.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  const heroSection = document.getElementById('home');
+  if (heroSection) heroObserver.observe(heroSection);
+
+  // ---- Portfolio filter tabs ----
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const projectCards = document.querySelectorAll('.project-card');
+  const noResults = document.getElementById('no-results');
+
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // update active state
+      filterTabs.forEach(t => {
+        t.classList.remove('active', 'text-charcoal');
+        t.classList.add('text-charcoal/50');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active', 'text-charcoal');
+      tab.classList.remove('text-charcoal/50');
+      tab.setAttribute('aria-selected', 'true');
+
+      const filter = tab.getAttribute('data-filter');
+      let visibleCount = 0;
+
+      projectCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        const matches = filter === 'all' || category === filter;
+        card.style.display = matches ? '' : 'none';
+        if (matches) visibleCount++;
+      });
+
+      noResults.classList.toggle('hidden', visibleCount > 0);
+    });
+  });
+
+  // ---- Contact form validation ----
+  const form = document.getElementById('contact-form');
+  const formSuccess = document.getElementById('form-success');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let isValid = true;
+
+    // clear previous errors
+    form.querySelectorAll('.error-msg').forEach(msg => {
+      msg.classList.add('hidden');
+      msg.textContent = '';
+    });
+    form.querySelectorAll('input, select, textarea').forEach(field => {
+      field.classList.remove('border-amber');
+    });
+
+    const fields = [
+      { el: document.getElementById('full-name'), message: 'Please enter your full name.' },
+      { el: document.getElementById('email'), message: 'Please enter a valid email address.', isEmail: true },
+      { el: document.getElementById('phone'), message: 'Please enter your phone number.' },
+      { el: document.getElementById('project-type'), message: 'Please select a project type.' },
+      { el: document.getElementById('message'), message: 'Please tell us about your project.' },
+    ];
+
+    fields.forEach(({ el, message, isEmail }) => {
+      const value = el.value.trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const invalid = value === '' || (isEmail && !emailPattern.test(value));
+
+      if (invalid) {
+        isValid = false;
+        el.classList.add('border-amber');
+        const errorEl = el.parentElement.querySelector('.error-msg');
+        if (errorEl) {
+          errorEl.textContent = message;
+          errorEl.classList.remove('hidden');
+        }
+      }
+    });
+
+    if (isValid) {
+      formSuccess.classList.remove('hidden');
+      form.reset();
+      setTimeout(() => formSuccess.classList.add('hidden'), 6000);
+    } else {
+      formSuccess.classList.add('hidden');
+    }
+  });
+
+  // ---- Footer year ----
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
